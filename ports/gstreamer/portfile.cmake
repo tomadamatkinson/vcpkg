@@ -8,8 +8,8 @@ vcpkg_from_gitlab(
     GITLAB_URL https://gitlab.freedesktop.org/
     OUT_SOURCE_PATH SOURCE_PATH
     REPO gstreamer/gstreamer
-    REF 1.20.5
-    SHA512 2a996d8ac0f70c34dbbc02c875026df6e89346f0844fbaa25475075bcb6e57c81ceb7d71e729c3259eace851e3d7222cb3fe395e375d93eb45b1262a6ede1fdb
+    REF 1.22.5
+    SHA512 bf6ce1d64a0697e7910826147b48f8f658366a5a
     HEAD_REF master
     PATCHES
         fix-clang-cl.patch
@@ -199,7 +199,7 @@ vcpkg_configure_meson(
         -Dgst-plugins-good:pulse=auto
         -Dgst-plugins-good:qt5=disabled
         -Dgst-plugins-good:shout2=disabled
-        -Dgst-plugins-good:soup=disabled
+        -Dgst-plugins-good:soup=auto
         -Dgst-plugins-good:twolame=disabled
         -Dgst-plugins-good:waveform=auto
         -Dgst-plugins-good:wavpack=disabled # Error during plugin build
